@@ -1,0 +1,25 @@
+# Runtime state and caches (non-agentic)
+backups/
+cache/
+debug/
+file-history/
+ide/
+plugins/
+projects/
+session-env/
+shell-snapshots/
+sessions/
+skills/synced/
+history.jsonl
+.last-cleanup
+
+# Local/special Claude configuration (may contain secrets or machine-specific values)
+settings.json
+settings.local.json
+.claude.json*
+*.key
+*.lock
+
+# Plugin caches (regenerated automatically)
+plugins/install-counts-cache.json
+plugins/plugin-directory-cache-v2.json
