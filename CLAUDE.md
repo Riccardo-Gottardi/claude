@@ -16,15 +16,15 @@ Always write mathematical formulas in LaTeX in your responses: use `$...$` for i
 
 Never wrap a bare number in math delimiters: the renderer treats `$` followed by a digit as a currency sign and breaks the surrounding formulas. Write plain numbers as plain text (0.90, not `$0.90$`). If a number belongs to a formula, put it inside a full expression that starts with a symbol (e.g. `$p_1 = 0.90$`, `$\text{IoU} = 0.5$`).
 
-Every formula must be followed by a short caption that introduces all of its symbols, so it is understandable, or at least readable, without prior knowledge. Right after the formula, give a "where" line that states what each symbol means (and its shape or domain when that matters), e.g.:
+Every formula must be followed by a short caption that introduces all of its symbols, so it is understandable, or at least readable, without prior knowledge. Right after the formula, add a small standalone paragraph that starts with the word "Caption" in italics (`*Caption:*`) and states what each symbol means (and its shape or domain when that matters), e.g.:
 
 $$\mathbf{y} = \mathcal{F}(\mathbf{x}; \{W_i\}) + \mathbf{x}$$
 
-where $\mathbf{x}$ is the block input, $\mathbf{y}$ its output, $\mathcal{F}$ the residual function learned by the block, and $\{W_i\}$ the weights of $\mathcal{F}$.
+*Caption:* $\mathbf{x}$ is the block input, $\mathbf{y}$ its output, $\mathcal{F}$ the residual function learned by the block, and $\{W_i\}$ the weights of $\mathcal{F}$.
 
 - Define every symbol, including indices, sets, operators and constants that are not universally known (e.g. $\pi$ and basic $+$ need no definition, but $\mathcal{F}$, $W_i$ or $\odot$ do).
 - Keep the caption to one or two sentences; do not turn it into a derivation.
-- This applies to inline formulas too: introduce the symbol the first time it appears (e.g. "the learning rate $\eta$").
+- For inline formulas, no separate caption paragraph is needed: introduce the symbol in the sentence the first time it appears (e.g. "the learning rate $\eta$").
 - If a symbol was already defined earlier in the same response, do not repeat its definition.
 
 ## Graphs and schemas
