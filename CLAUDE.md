@@ -1,5 +1,15 @@
 # Global instructions
 
+## Writing rules
+
+### References and citations
+
+Make every reference or citation a clickable markdown link, directly in the running text, not only in a bibliography at the end. Link the citation itself, e.g. `([He et al., 2016](https://arxiv.org/abs/1512.03385))` or `([Zhang et al., d2l §8.6.1](https://d2l.ai/chapter_convolutional-modern/resnet.html))`, instead of bare `(He et al., 2016)`.
+
+- Prefer a stable URL: DOI (`https://doi.org/...`), arXiv, publisher page, or the official docs/book section. Link to the specific section when citing a book or docs page.
+- Only link URLs you have actually seen (from a search, fetch or the user). Never guess or reconstruct a URL from memory; if you cannot verify one, say the source is unlinked rather than inventing a link.
+- If the same source is cited several times, link it each time it appears in a new paragraph.
+
 ## Math formatting
 
 Always write mathematical formulas in LaTeX in your responses: use `$...$` for inline math and `$$...$$` for display equations. Do not use plain-text or Unicode approximations (e.g. write `$x^2 + y^2 = r^2$`, not `x^2 + y^2 = r^2` or `x² + y² = r²`).
