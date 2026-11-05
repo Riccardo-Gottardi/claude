@@ -23,3 +23,6 @@ settings.local.json
 # Plugin caches (regenerated automatically)
 plugins/install-counts-cache.json
 plugins/plugin-directory-cache-v2.json
+
+# Telemetry data
+telemetry/
